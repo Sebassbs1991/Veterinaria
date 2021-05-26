@@ -40,7 +40,7 @@ namespace Veterinaria.Web.Datos.Entidades
 
 
         [Display (Name = "Nacimiento")]
-        [DisplayFormat(DataFormatString = "{0:yyyy:MM:dd}"]
+        [DisplayFormat(DataFormatString = "{0:yyyy:MM:dd}")]
         public DateTime NacimientoLocal => Nacimiento.ToLocalTime();
 
 
