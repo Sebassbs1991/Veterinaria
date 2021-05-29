@@ -30,6 +30,15 @@ namespace Veterinaria.Web.Datos.Entidades
         [DisplayFormat(DataFormatString = "{0:yyyy:MM:dd}")]
         public DateTime FechaLocal => Fecha.ToLocalTime();
 
+        public Propietario Propietario { get; set; }
+
+        public Mascota Mascota { get; set; }
+
+
+
+
+
+
 
     }
 }

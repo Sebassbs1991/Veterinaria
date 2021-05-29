@@ -36,7 +36,13 @@ namespace Veterinaria.Web.Datos.Entidades
         [Display(Name ="Owner")]
         public string NombreCompleto => $"{Nombre} {Apellido}";
 
-      
+        public ICollection<Mascota> Mascotas { get; set; }
+
+        public ICollection<Agenda> Agendas { get; set; }
+
+
+
+
 
 
 

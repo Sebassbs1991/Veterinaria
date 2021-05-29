@@ -43,6 +43,13 @@ namespace Veterinaria.Web.Datos.Entidades
         [DisplayFormat(DataFormatString = "{0:yyyy:MM:dd}")]
         public DateTime NacimientoLocal => Nacimiento.ToLocalTime();
 
+        public TipoMascota TipoMascota { get; set; }
+
+        public Propietario Propietario { get; set; }
+        public ICollection<HistoriaC> HistoriaCs { get; set; }
+
+        public ICollection<Agenda> Agendas { get; set; }
+
 
 
 

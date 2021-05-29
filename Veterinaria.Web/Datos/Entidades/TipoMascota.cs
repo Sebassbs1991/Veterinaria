@@ -16,5 +16,9 @@ namespace Veterinaria.Web.Datos.Entidades
         [MaxLength(50)]
         [Required]
         public string Nombre { get; set; }
+
+        public  ICollection<Mascota> Mascotas{ get; set; }
     }
+
+
 }

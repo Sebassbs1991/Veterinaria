@@ -17,5 +17,7 @@ namespace Veterinaria.Web.Datos.Entidades
         [Required]
         public string Nombre { get; set; }
 
+        public ICollection<HistoriaC> HistoriaCs { get; set; }
+
     }
 }

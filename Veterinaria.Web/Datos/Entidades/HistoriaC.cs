@@ -31,5 +31,11 @@ namespace Veterinaria.Web.Datos.Entidades
         [DisplayFormat(DataFormatString = "{0:yyyy:MM:dd}", ApplyFormatInEditMode =true)]
         public DateTime FechaLocal => Date.ToLocalTime(); // Garantiza que muestre la hora correcta de cada localidad
 
+        public TipoServicio TipoServicio { get; set; }
+
+        public Mascota Mascota { get; set; }
+
+
+
     }
 }
